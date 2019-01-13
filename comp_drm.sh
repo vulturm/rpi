@@ -2,7 +2,8 @@
 # MV: compile libdrm
 DRM_PREFIX="/usr/mesa"
 DRM_CLONE_DIR="drm"
-DRM_VER="2.4.76"
+#DRM_VER="2.4.76"
+DRM_VER="2.4.96"
 
 if [[ ! -d "${DRM_CLONE_DIR}" ]]; then
 	git clone git://anongit.freedesktop.org/mesa/drm "${DRM_CLONE_DIR}"
@@ -22,5 +23,5 @@ git checkout tags/libdrm-${DRM_VER}
 	--disable-freedreno
 
 
-make && make install
+make -j2 && make install
 
