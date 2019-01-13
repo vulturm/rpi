@@ -1,4 +1,6 @@
 #!/bin/bash
+# MV: compile mesa
+
 MESA_PREFIX="/usr/mesa"
 MESA_CLONE_DIR="mesa"
 MESA_VER="18.1.9"

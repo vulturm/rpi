@@ -1,4 +1,5 @@
 #!/bin/bash
+# MV: compile libdrm
 DRM_PREFIX="/usr/mesa"
 DRM_CLONE_DIR="drm"
 DRM_VER="2.4.76"
